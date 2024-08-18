@@ -1,0 +1,5 @@
+print("Quel est votre nom?")
+nom_utilisateur = input()
+print("Quel est votre age")
+age_utilisateur = input()
+print("Vous vous appelez")
