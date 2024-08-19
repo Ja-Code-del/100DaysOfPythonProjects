@@ -38,9 +38,10 @@ while running:
             # Process coins
             # Check transaction successful
             if money_machine.make_payment(coffee_choice.cost):
+
                 # Serve coffee and ask if user wants another one
                 barista.make_coffee(coffee_choice)
-                run_again = input("\nDo you want another thing?\nType 'yes' or 'no' to exit").lower()
+                run_again = input("\nDo you want another thing?\nType 'yes' or 'no' to exit\n").lower()
                 if run_again == 'no':
                     running = False
 
