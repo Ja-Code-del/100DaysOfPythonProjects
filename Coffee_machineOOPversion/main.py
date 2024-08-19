@@ -32,7 +32,7 @@ while running:
         coffee_choice = my_menu.find_drink(user_choice)
         # Check resources
         if barista.is_resource_sufficient(coffee_choice):
-            print("Can make your coffee")
+            print("I Can make it for you 😊")
         else:
             break
 
