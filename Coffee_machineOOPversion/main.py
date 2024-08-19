@@ -26,6 +26,7 @@ while running:
     if user_choice == 'report':
         print("AVAILABLE RESOURCES ARE :\n")
         barista.report()
+        money_machine.report()
 
     elif user_choice in my_menu.get_items():
         #create a MenuItem called coffee_choice with the function find_drink
@@ -33,17 +34,19 @@ while running:
         # Check resources
         if barista.is_resource_sufficient(coffee_choice):
             print("I Can make it for you 😊")
+
+            # Process coins
+            # Check transaction successful
+            if money_machine.make_payment(coffee_choice.cost):
+                # Serve coffee and ask if user wants another one
+                barista.make_coffee(coffee_choice)
+                run_again = input("\nDo you want another thing?\nType 'yes' or 'no' to exit").lower()
+                if run_again == 'no':
+                    running = False
+
         else:
             break
 
-            # Process coins
-            #Check transaction successful
-        if money_machine.make_payment(coffee_choice.cost):
-            #Serve coffee and ask if user wants another one
-            barista.make_coffee(coffee_choice)
-            run_again = input("\nDo you want another thing?\nType 'yes' or 'no' to exit").lower()
-            if run_again == 'no':
-                running = False
-    elif user_choice == 'off':
+    else:
         running = False
         break
