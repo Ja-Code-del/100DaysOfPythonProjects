@@ -1,5 +1,5 @@
-from levels import *
-from data import *
+from quiz_game.levels import *
+from quiz_game.data import *
 
 #creating the first level as an Levels object
 first_level = Levels(level_one)
