@@ -1,20 +1,27 @@
-from question_model import Question
-from data import question_data
-from quiz_brain import QuizBrain
+from levels import *
+from data import *
 
-#The Question bank which contains question objects
-question_bank = []
-for item in question_data:
-    question_bank.append(Question(item["text"], item["answer"]))
+#creating the first level as an Levels object
+first_level = Levels(level_one)
+#initialize the principle variable : its questions bank
+first_level.initialize()
+#the real processing and ending of the game
+first_level.process()
+#check if user has enough score to go to next level
+if first_level.user_can_pass(first_level.cerebro):
+    # LEVEL TWO
+    second_level = Levels(level_two)
+    second_level.initialize()
+    second_level.process()
+    if second_level.user_can_pass(second_level.cerebro):
+        print("LEVEL 3")
+        third_level = Levels(level_three)
+        third_level.initialize()
+        third_level.process()
 
-#create cerebro our QuizBrain object
-cerebro = QuizBrain(question_bank)
-
-#until cerebro has question, he could ask
-while cerebro.still_has_question():
-    cerebro.next_question()
-
-#ending of the game
-print("You completed this level")
-print(f"Your final score is: {cerebro.score}/{len(question_bank)}")
-
+        if third_level.user_can_pass(third_level.cerebro):
+            print("LEVEL 4")
+    else:
+        print("GAME OVER")
+else:
+    print("GAME OVER")

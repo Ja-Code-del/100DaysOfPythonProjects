@@ -8,7 +8,7 @@ class QuizBrain:
     def next_question(self):
         current_question = self.question_list[self.question_number]
         self.question_number += 1
-        user_answer = input(f"Q.{self.question_number} {current_question.text}. (True / False)\n")
+        user_answer = input(f"Q.{self.question_number} {current_question.text}. (Vrai / Faux)\n")
         self.check_answer(user_answer, current_question.answer)
 
     def still_has_question(self):
@@ -17,14 +17,16 @@ class QuizBrain:
 
     #CHECKING IF THE ANSWER WAS CORRECT
     def check_answer(self, user_answer, correct_answer):
+        information = self.question_list[self.question_number - 1].info
         if user_answer.lower() == correct_answer.lower():
             self.score += 1
-            print("You got it right")
-            print(f"Your current score is: {self.score}")
-        else:
-            print("That's wrong")
-            print(f"The correct answer was : {correct_answer}")
-            print(f"Your current score is: {self.score}")
+            print("Bien joué\n")
+            print(f'En effet : {information}')
+            print(f"Votre score est: {self.score}")
             print("\n")
-
-
+        else:
+            print("Mauvaise réponse\n")
+            print(f"Il fallait dire : {correct_answer}")
+            print(f'Explication : {information}')
+            print(f"Votre score reste: {self.score}")
+            print("\n")
