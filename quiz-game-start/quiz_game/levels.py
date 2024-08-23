@@ -7,19 +7,19 @@ class Levels:
         # level is the actual list of data
         self.level = level
         self.question_bank = []
-        self.cerebro = QuizBrain(self.question_bank)
+        self.quiz = QuizBrain(self.question_bank)
 
     def initialize(self):
-        self.cerebro.score = 0
+        self.quiz.score = 0
         for item in self.level:
             self.question_bank.append(Question(item["text"], item["answer"], item["info"]))
 
     def process(self):
-        while self.cerebro.still_has_question():
-            self.cerebro.next_question()
+        while self.quiz.still_has_question():
+            self.quiz.next_question()
 
         print("NIVEAU TERMINE")
-        print(f"VOTRE SCORE FINAL EST : {self.cerebro.score}/{len(self.question_bank)}")
+        print(f"VOTRE SCORE FINAL EST : {self.quiz.score}/{len(self.question_bank)}")
 
     def user_can_pass(self, this_cerebro):
         if this_cerebro.score > round(len(self.level) / 2):

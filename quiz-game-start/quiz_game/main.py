@@ -8,18 +8,18 @@ first_level.initialize()
 #the real processing and ending of the game
 first_level.process()
 #check if user has enough score to go to next level
-if first_level.user_can_pass(first_level.cerebro):
+if first_level.user_can_pass(first_level.quiz):
     # LEVEL TWO
     second_level = Levels(level_two)
     second_level.initialize()
     second_level.process()
-    if second_level.user_can_pass(second_level.cerebro):
+    if second_level.user_can_pass(second_level.quiz):
         print("LEVEL 3")
         third_level = Levels(level_three)
         third_level.initialize()
         third_level.process()
 
-        if third_level.user_can_pass(third_level.cerebro):
+        if third_level.user_can_pass(third_level.quiz):
             print("LEVEL 4")
     else:
         print("GAME OVER")
