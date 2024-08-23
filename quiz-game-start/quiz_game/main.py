@@ -4,6 +4,7 @@ from quiz_game.data import *
 #variable to check if the user wants to reload a quiz he loses
 reload_game = True
 
+#TODO - CREER LA FONCTION PLAY_GAME(reload_game, level) QUI ENCAPSULE LES 4 PREMIERES PARTIES DE CHAQUE PARTIE
 while reload_game:
     #creating the first level as a Levels object. User must score 7 to pass to next level
     first_level = Levels(level_one, 7)
