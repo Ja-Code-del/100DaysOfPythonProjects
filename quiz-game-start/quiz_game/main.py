@@ -5,8 +5,8 @@ from quiz_game.data import *
 reload_game = True
 
 while reload_game:
-    #creating the first level as a Levels object
-    first_level = Levels(level_one)
+    #creating the first level as a Levels object. User must score 7 to pass to next level
+    first_level = Levels(level_one, 7)
     #initialize the principle variable : its questions bank
     first_level.initialize()
     #the real processing and ending of the game
@@ -15,12 +15,12 @@ while reload_game:
     if first_level.user_passed(first_level.quiz):
         # LEVEL TWO
         while reload_game:
-            second_level = Levels(level_two)
+            second_level = Levels(level_two, 6)
             second_level.initialize()
             second_level.process()
             if second_level.user_passed(second_level.quiz):
                 print("LEVEL 3")
-                third_level = Levels(level_three)
+                third_level = Levels(level_three, 5)
                 third_level.initialize()
                 third_level.process()
 

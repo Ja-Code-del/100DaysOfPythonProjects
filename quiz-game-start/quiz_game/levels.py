@@ -3,11 +3,12 @@ from quiz_brain import QuizBrain
 
 
 class Levels:
-    def __init__(self, level):
+    def __init__(self, level, average_score):
         # level is the actual list of data
         self.level = level
         self.question_bank = []
         self.quiz = QuizBrain(self.question_bank)
+        self.score_to_passe = average_score
 
     def initialize(self):
         self.quiz.score = 0
@@ -22,7 +23,7 @@ class Levels:
         print(f"VOTRE SCORE FINAL EST : {self.quiz.score}/{len(self.question_bank)}")
 
     def user_passed(self, this_quiz):
-        if this_quiz.score > round(len(self.level) / 2):
+        if this_quiz.score > self.score_to_passe:
             print("Bien joué, vous passez au niveau suivant!!!")
             print("------------------------------------------------------------------------------------------")
             return True
