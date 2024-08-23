@@ -29,3 +29,14 @@ class Levels:
         else:
             print("MALHEUREUSEMENT VOTRE COURSE S'ARRETE ICI.\nSCORE INSUFFISANT")
             return False
+
+    def reload(self, this_quiz):
+        """Return the choice of the user to use it and loop on a quiz he or she loses"""
+        choice = input("VOULEZ-VOUS REJOUEZ LA PARTIE? FERIEZ-VOUS MIEUX? (OUI / NON)").lower()
+        return choice
+
+    def check_reload(self, this_quiz):
+        if self.reload(this_quiz) == 'oui':
+            return True
+        else:
+            return False
