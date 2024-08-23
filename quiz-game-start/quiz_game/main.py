@@ -25,7 +25,10 @@ while reload_game:
                 third_level.process()
 
                 if third_level.user_passed(third_level.quiz):
-                    print("LEVEL 4")
+                    while reload_game:
+                        print("LEVEL 4")
+
+                    print("GAME OVER")
             else:
                 reload_game = second_level.check_reload(second_level.quiz)
         print("GAME OVER")

@@ -6,6 +6,7 @@ class Levels:
     def __init__(self, level, average_score):
         # level is the actual list of data
         self.level = level
+        #stack of question
         self.question_bank = []
         self.quiz = QuizBrain(self.question_bank)
         self.score_to_passe = average_score

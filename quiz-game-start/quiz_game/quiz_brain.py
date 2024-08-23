@@ -1,5 +1,6 @@
 #ASKING THE QUESTIONS
 class QuizBrain:
+    """Quiz class to generate every quiz game and manage them """
     def __init__(self, question_list):
         self.question_number = 0
         self.score = 0
@@ -17,6 +18,7 @@ class QuizBrain:
 
     #CHECKING IF THE ANSWER WAS CORRECT
     def check_answer(self, user_answer, correct_answer):
+        """Check the answer of the user and upgrade his score"""
         information = self.question_list[self.question_number - 1].info
         if user_answer.lower() == correct_answer.lower():
             self.score += 1
