@@ -21,8 +21,8 @@ class Levels:
         print("NIVEAU TERMINE")
         print(f"VOTRE SCORE FINAL EST : {self.quiz.score}/{len(self.question_bank)}")
 
-    def user_can_pass(self, this_cerebro):
-        if this_cerebro.score > round(len(self.level) / 2):
+    def user_passed(self, this_quiz):
+        if this_quiz.score > round(len(self.level) / 2):
             print("Bien joué, vous passez au niveau suivant!!!")
             print("------------------------------------------------------------------------------------------")
             return True
