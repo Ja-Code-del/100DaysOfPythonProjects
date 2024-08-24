@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c1c5ed9-a4ca-437e-bb1f-9394ec5d720a" name="Changes" comment="penup() and pendown() exercises">
-      <change afterPath="$PROJECT_DIR$/drawing_shapes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/day-18-start.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/day-18-start.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0c1c5ed9-a4ca-437e-bb1f-9394ec5d720a" name="Changes" comment="penup() and pendown() exercises" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +33,8 @@
   "keyToString": {
     "Python.drawing_shapes.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.random_walk.executor": "Run",
+    "Python.spirograph.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/bretwalda/PycharmProjects/100DaysOfPythonProjects/day-18-start"
