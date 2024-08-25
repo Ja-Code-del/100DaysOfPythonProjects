@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c1c5ed9-a4ca-437e-bb1f-9394ec5d720a" name="Changes" comment="draw shape of different sides and color">
-      <change afterPath="$PROJECT_DIR$/hirst-painting/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hirst-painting/hirst.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hirst-painting/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hirst-painting/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0c1c5ed9-a4ca-437e-bb1f-9394ec5d720a" name="Changes" comment="main.py : good representaion of hirst painting. but need to do bigger dot&#10;&#10;utils: new function using the package colorgram to extract colors from a picture">
+      <changelist_data name="Bret Walda" email="82909109+ja-code-del@users.noreply.github.com" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Bret Walda &lt;82909109+ja-code-del@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -96,13 +97,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724446390548</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="main.py : good representaion of hirst painting. but need to do bigger dot&#10;&#10;utils: new function using the package colorgram to extract colors from a picture">
+      <option name="closed" value="true" />
+      <created>1724544863978</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724544863978</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="penup() and pendown() exercises" />
     <MESSAGE value="draw shape of different sides and color" />
-    <option name="LAST_COMMIT_MESSAGE" value="draw shape of different sides and color" />
+    <MESSAGE value="main.py : good representaion of hirst painting. but need to do bigger dot&#10;&#10;utils: new function using the package colorgram to extract colors from a picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="main.py : good representaion of hirst painting. but need to do bigger dot&#10;&#10;utils: new function using the package colorgram to extract colors from a picture" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
