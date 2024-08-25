@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c1c5ed9-a4ca-437e-bb1f-9394ec5d720a" name="Changes" comment="penup() and pendown() exercises" />
+    <list default="true" id="0c1c5ed9-a4ca-437e-bb1f-9394ec5d720a" name="Changes" comment="draw shape of different sides and color">
+      <change afterPath="$PROJECT_DIR$/hirst-painting/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hirst-painting/hirst.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hirst-painting/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hirst-painting/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,16 +30,18 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2l3nDqbCqdsrjClxeH5Fn1Xo6T7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.drawing_shapes.executor": "Run",
     "Python.main.executor": "Run",
-    "Python.random_walk.executor": "Run",
     "Python.spirograph.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -80,11 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1724437274941</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="draw shape of different sides and color">
+      <option name="closed" value="true" />
+      <created>1724446390548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724446390548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="penup() and pendown() exercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="penup() and pendown() exercises" />
+    <MESSAGE value="draw shape of different sides and color" />
+    <option name="LAST_COMMIT_MESSAGE" value="draw shape of different sides and color" />
   </component>
 </project>
