@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c1c5ed9-a4ca-437e-bb1f-9394ec5d720a" name="Changes" comment="&#10;final version">
+    <list default="true" id="0c1c5ed9-a4ca-437e-bb1f-9394ec5d720a" name="Changes" comment="Challenge completed. 10x10 dot with beautiful colors :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hirst-painting/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/hirst-painting/main.py" afterDir="false" />
     </list>
@@ -134,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724546591172</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="trying with dot() method">
+      <option name="closed" value="true" />
+      <created>1724547402160</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724547402160</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Challenge completed. 10x10 dot with beautiful colors :)">
+      <option name="closed" value="true" />
+      <created>1724631769704</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724631769704</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,7 +159,9 @@
     <MESSAGE value="draw shape of different sides and color" />
     <MESSAGE value="main.py : good representaion of hirst painting. but need to do bigger dot&#10;&#10;utils: new function using the package colorgram to extract colors from a picture" />
     <MESSAGE value="&#10;final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;final version" />
+    <MESSAGE value="trying with dot() method" />
+    <MESSAGE value="Challenge completed. 10x10 dot with beautiful colors :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Challenge completed. 10x10 dot with beautiful colors :)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
