@@ -7,12 +7,12 @@ canva = t.Screen()
 canva.setup(640, 380)
 
 tom.penup()
-tom.backward(300)
+tom.backward(150)
 tom.right(90)
 tom.forward(160)
 tom.left(90)
 
-x = 8
+x = 32
 tom.speed("fastest")
 
 
@@ -34,16 +34,17 @@ colors = [(218, 173, 125), (159, 181, 190), (134, 73, 53), (50, 103, 154), (118,
 #     tom.backward(600)
 
 tom.pensize(x)
-for _ in range(50):
-    for _ in range(int(600 / (x + 2))):
+for _ in range(10):
+    for _ in range(10):
         tom.pendown()
-        tom.dot(8, random.choice(colors))
+        tom.dot(32, random.choice(colors))
         tom.penup()
         tom.forward(x + 1)
+    print(tom.pos())
     tom.penup()
     tom.left(90)
-    tom.forward(10)
+    tom.forward(x + 1)
     tom.right(90)
-    tom.backward(600)
+    tom.backward(330)
 
 t.exitonclick()
