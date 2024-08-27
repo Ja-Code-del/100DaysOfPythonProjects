@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="91d2dc0a-cc46-455d-b0ed-2a023c74ca71" name="Changes" comment="little improvements" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ja-Code-del"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ja-Code-del/100DaysOfPythonProjects.git",
+    "accountId": "64d15a15-a1cb-470c-ada0-f04b4c897d5d"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2kzPWJsgRZGoOmXJlitAJ1kINkX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.levels.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.quiz_brain.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/bretwalda/PycharmProjects/100DaysOfPythonProjects/quiz-game-start"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quiz_game" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91d2dc0a-cc46-455d-b0ed-2a023c74ca71" name="Changes" comment="" />
+      <created>1724283462322</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724283462322</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit.&#10;worked on main. Built the question_bank list">
+      <option name="closed" value="true" />
+      <created>1724285042710</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724285042711</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first stable version">
+      <option name="closed" value="true" />
+      <created>1724343244265</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724343244265</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Improvements. Added level 3">
+      <option name="closed" value="true" />
+      <created>1724368388126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724368388126</updated>
+    </task>
+    <task id="LOCAL-00004" summary="important files for config. added">
+      <option name="closed" value="true" />
+      <created>1724368436600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724368436600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="moved all the files into a package">
+      <option name="closed" value="true" />
+      <created>1724370156007</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724370156007</updated>
+    </task>
+    <task id="LOCAL-00006" summary="rename 'cerebro' into 'quiz'">
+      <option name="closed" value="true" />
+      <created>1724407288074</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724407288074</updated>
+    </task>
+    <task id="LOCAL-00007" summary="rename 'user_can_pass' into 'user_passed'">
+      <option name="closed" value="true" />
+      <created>1724407498209</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724407498209</updated>
+    </task>
+    <task id="LOCAL-00008" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1724407520422</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724407520422</updated>
+    </task>
+    <task id="LOCAL-00009" summary="levels.py : added two new methods reload and check_reload to allow bad player to reload the quiz when they lose&#10;&#10;main.py : added variable and loop to allow reloading a quiz user loses">
+      <option name="closed" value="true" />
+      <created>1724410883856</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724410883856</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed the data so it goes from easiest to hardest&#10;&#10;level gets new attributs score_to_pass which is the average score to have in order to pass to next level">
+      <option name="closed" value="true" />
+      <created>1724414171710</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724414171710</updated>
+    </task>
+    <task id="LOCAL-00011" summary="little improvements">
+      <option name="closed" value="true" />
+      <created>1724417126761</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724417126761</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit.&#10;worked on main. Built the question_bank list" />
+    <MESSAGE value="first stable version" />
+    <MESSAGE value="new version made to allow next level. Added the class Levels so each level is now an object." />
+    <MESSAGE value="Improvements. Added level 3" />
+    <MESSAGE value="important files for config. added" />
+    <MESSAGE value="moved all the files into a package" />
+    <MESSAGE value="rename 'cerebro' into 'quiz'" />
+    <MESSAGE value="rename 'user_can_pass' into 'user_passed'" />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="levels.py : added two new methods reload and check_reload to allow bad player to reload the quiz when they lose&#10;&#10;main.py : added variable and loop to allow reloading a quiz user loses" />
+    <MESSAGE value="changed the data so it goes from easiest to hardest&#10;&#10;level gets new attributs score_to_pass which is the average score to have in order to pass to next level" />
+    <MESSAGE value="little improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="little improvements" />
+  </component>
+</project>
