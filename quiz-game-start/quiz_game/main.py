@@ -5,6 +5,7 @@ from quiz_game.data import *
 reload_game = True
 
 #TODO - CREER LA FONCTION PLAY_GAME(reload_game, level) QUI ENCAPSULE LES 4 PREMIERES PARTIES DE CHAQUE PARTIE
+print("LEVEL 1")
 while reload_game:
     #creating the first level as a Levels object. User must score 7 to pass to next level
     first_level = Levels(level_one, 7)
@@ -14,7 +15,7 @@ while reload_game:
     first_level.process()
     #check if user has enough score to go to next level
     if first_level.user_passed(first_level.quiz):
-        # LEVEL TWO
+        print("LEVEL 2")
         while reload_game:
             second_level = Levels(level_two, 6)
             second_level.initialize()
