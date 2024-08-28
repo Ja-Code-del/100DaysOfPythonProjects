@@ -8,8 +8,8 @@ mike = Turtle()
 screen = Screen()
 screen.setup(640, 480)
 
-
-# user_bet = screen.textinput("Make Your Bet", "Who will win? : ")
+is_race_on = False
+user_bet = screen.textinput("Make Your Bet", "Who will win? : ")
 
 
 # state of Turtles function
@@ -50,18 +50,5 @@ for key, value in racers.items():
             if check_arrive(value1):
                 print(f"{key}'s arrived")
                 checker = False
-        # tim.forward(speed)
-        # if check_arrive(tim):
-        #     print("Tim's arrived")
-        # speed = r.randint(0, 10)
-        # don.forward(speed)
-        # check_arrive(don)
-        # speed = r.randint(0, 10)
-        # raph.forward(speed)
-        # check_arrive(raph)
-        # speed = r.randint(0, 10)
-        # mike.forward(speed)
-        # check_arrive(mike)
-        # print(tim.pos())
 
 screen.exitonclick()
