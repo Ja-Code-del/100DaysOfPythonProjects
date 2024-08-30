@@ -1,4 +1,5 @@
 from turtle import Turtle, Screen
+from food import COLORS
 
 MOVE_DISTANCE = 20
 UP = 90
@@ -39,15 +40,26 @@ class Snake:
         screen.onkeypress(self.go_left, "Left")
         screen.onkeypress(self.go_right, "Right")
 
-    def get_longer(self):
+    def get_longer(self, food_color):
         last_x = self.turtles[len(self.turtles) - 1].xcor()
         last_y = self.turtles[len(self.turtles) - 1].ycor()
         last_cor = (last_x, last_y)
         new_turtle = Turtle("square")
+        new_turtle.color(food_color)
         new_turtle.penup()
         new_turtle.goto(last_cor)
         self.turtles.append(new_turtle)
-        new_turtle.color("gray")
+
+    def collision_with_tail(self):
+        for segment in self.turtles:
+            diff_angle = (segment.heading() - self.head.heading())
+            if self.head.distance(segment) < 10 and diff_angle != 0:
+                return True
+
+    def collision_with(self, apple):
+        """If the snake eat the food"""
+        if self.head.distance(apple) < 15:
+            return True
 
     def go_up(self):
         #IF THE SNAKE IS GOING UP IT'S NOT ALLOWED TO GO DOWN
