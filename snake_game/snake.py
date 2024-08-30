@@ -1,6 +1,11 @@
 from turtle import Turtle, Screen
 
 MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
+
 screen = Screen()
 
 
@@ -8,6 +13,7 @@ class Snake:
     def __init__(self):
         self.turtles = []
         self.create_snake()
+        self.head = self.turtles[0]
 
     def create_snake(self):
         for _ in range(3):
@@ -26,21 +32,25 @@ class Snake:
             new_x = self.turtles[square_index - 1].xcor()
             new_y = self.turtles[square_index - 1].ycor()
             self.turtles[square_index].goto(new_x, new_y)
-
+        self.head.forward(MOVE_DISTANCE)
         screen.onkeypress(self.go_up, "Up")
         screen.onkeypress(self.go_down, "Down")
         screen.onkeypress(self.go_left, "Left")
         screen.onkeypress(self.go_right, "Right")
-        self.turtles[0].forward(MOVE_DISTANCE)
 
     def go_up(self):
-        self.turtles[0].setheading(90)
+        #IF THE SNAKE IS GOING UP IT'S NOT ALLOWED TO GO DOWN
+        if self.head.heading() != DOWN:
+            self.head.setheading(UP)
 
     def go_down(self):
-        self.turtles[0].setheading(270)
+        if self.head.heading() != UP:
+            self.head.setheading(DOWN)
 
     def go_left(self):
-        self.turtles[0].setheading(180)
+        if self.head.heading() != RIGHT:
+            self.head.setheading(LEFT)
 
     def go_right(self):
-        self.turtles[0].setheading(0)
+        if self.head.heading() != LEFT:
+            self.head.setheading(RIGHT)
