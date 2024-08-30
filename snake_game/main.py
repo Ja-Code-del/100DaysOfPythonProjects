@@ -5,8 +5,9 @@ from food import Food
 from scoreboard import ScoreBoard
 
 screen = Screen()
+screen.colormode(255)
 screen.setup(width=600, height=600)
-screen.bgcolor("black")
+screen.bgcolor(33, 33, 33)
 screen.title("Snake Game")
 screen.tracer(0)
 
@@ -29,5 +30,28 @@ while game_is_on:
     #Detect collision with the food
     if snake.head.distance(food) < 15:
         food.refresh()
+        snake.get_longer()
         scoreboard.increase_score()
+
+    # Detect collision with the wall
+    if snake.head.xcor() > 290:
+        snake.head.goto(-290, snake.head.ycor())
+
+    if snake.head.xcor() < -290:
+        snake.head.goto(300, snake.head.ycor())
+
+    if snake.head.ycor() > 290:
+        snake.head.goto(snake.head.xcor(), -290)
+
+    if snake.head.ycor() < -290:
+        snake.head.goto(snake.head.xcor(), 300)
+
+    # Detect collision with the tail
+    for segment in snake.turtles:
+        diff_angle = (segment.heading() - snake.head.heading())
+        if snake.head.distance(segment) < 10 and diff_angle == 90 or snake.head.distance(
+                segment) < 10 and diff_angle == -90:
+            game_is_on = False
+            scoreboard.game_over()
+
 screen.exitonclick()

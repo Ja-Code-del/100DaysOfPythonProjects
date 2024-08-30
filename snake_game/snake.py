@@ -11,12 +11,13 @@ screen = Screen()
 
 class Snake:
     def __init__(self):
+        self.snake_size = 3
         self.turtles = []
         self.create_snake()
         self.head = self.turtles[0]
 
     def create_snake(self):
-        for _ in range(3):
+        for _ in range(self.snake_size):
             new_turtle = Turtle("square")
             new_turtle.color("gray")
             self.turtles.append(new_turtle)
@@ -37,6 +38,16 @@ class Snake:
         screen.onkeypress(self.go_down, "Down")
         screen.onkeypress(self.go_left, "Left")
         screen.onkeypress(self.go_right, "Right")
+
+    def get_longer(self):
+        last_x = self.turtles[len(self.turtles) - 1].xcor()
+        last_y = self.turtles[len(self.turtles) - 1].ycor()
+        last_cor = (last_x, last_y)
+        new_turtle = Turtle("square")
+        new_turtle.penup()
+        new_turtle.goto(last_cor)
+        self.turtles.append(new_turtle)
+        new_turtle.color("gray")
 
     def go_up(self):
         #IF THE SNAKE IS GOING UP IT'S NOT ALLOWED TO GO DOWN
