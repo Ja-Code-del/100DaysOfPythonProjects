@@ -51,9 +51,10 @@ class Snake:
         self.turtles.append(new_turtle)
 
     def collision_with_tail(self):
-        for segment in self.turtles:
-            diff_angle = (segment.heading() - self.head.heading())
-            if self.head.distance(segment) < 10 and diff_angle != 0:
+        for segment in self.turtles[1:]:
+            # diff_angle = (segment.heading() - self.head.heading())
+            if self.head.distance(segment) < 10:
+                # and diff_angle != 0):
                 return True
 
     def collision_with(self, apple):
