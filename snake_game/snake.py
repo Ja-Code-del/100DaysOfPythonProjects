@@ -1,4 +1,5 @@
 from turtle import Turtle, Screen
+import pygame
 from food import COLORS
 
 MOVE_DISTANCE = 20
@@ -8,6 +9,9 @@ LEFT = 180
 RIGHT = 0
 
 screen = Screen()
+
+pygame.mixer.init()
+collision_with_food_sound = pygame.mixer.Sound("collisionFood.mp3")
 
 
 class Snake:
@@ -35,10 +39,10 @@ class Snake:
             new_y = self.turtles[square_index - 1].ycor()
             self.turtles[square_index].goto(new_x, new_y)
         self.head.forward(MOVE_DISTANCE)
-        screen.onkeypress(self.go_up, "Up")
-        screen.onkeypress(self.go_down, "Down")
-        screen.onkeypress(self.go_left, "Left")
-        screen.onkeypress(self.go_right, "Right")
+        screen.onkeypress(self.go_up, "a")
+        screen.onkeypress(self.go_down, "w")
+        screen.onkeypress(self.go_left, "q")
+        screen.onkeypress(self.go_right, "d")
 
     def get_longer(self, food_color):
         last_x = self.turtles[len(self.turtles) - 1].xcor()
@@ -60,6 +64,7 @@ class Snake:
     def collision_with(self, apple):
         """If the snake eat the food"""
         if self.head.distance(apple) < 15:
+            collision_with_food_sound.play()
             return True
 
     def go_up(self):

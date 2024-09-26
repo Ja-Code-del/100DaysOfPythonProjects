@@ -1,4 +1,5 @@
 from turtle import Screen
+import pygame
 import time
 from snake import Snake
 from food import *
