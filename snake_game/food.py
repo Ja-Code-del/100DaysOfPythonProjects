@@ -1,3 +1,5 @@
+import random
+import turtle
 from turtle import Turtle
 import random as r
 
@@ -31,12 +33,9 @@ class Food(Turtle):
         self.goto(self.x, self.y)
 
     def refresh(self):
-        self.apparition += 1
         self.food_color = r.choice(COLORS)
         self.color(self.food_color)
         self.x = r.randint(-280, 280)
         self.y = r.randint(-280, 280)
         self.shapesize(stretch_len=0.5, stretch_wid=0.5)
-        if self.apparition % 5 == 0:
-            self.shapesize(stretch_wid=1, stretch_len=1)
         self.goto(self.x, self.y)

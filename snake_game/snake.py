@@ -1,6 +1,6 @@
 from turtle import Turtle, Screen
 import pygame
-from food import COLORS
+from food import *
 
 MOVE_DISTANCE = 20
 UP = 90
@@ -9,10 +9,9 @@ LEFT = 180
 RIGHT = 0
 
 screen = Screen()
-
 pygame.mixer.init()
 collision_with_food_sound = pygame.mixer.Sound("collisionFood.mp3")
-
+bite_tail = pygame.mixer.Sound("bite_tail.mp3")
 
 class Snake:
     def __init__(self):
@@ -58,6 +57,8 @@ class Snake:
         for segment in self.turtles[1:]:
             # diff_angle = (segment.heading() - self.head.heading())
             if self.head.distance(segment) < 10:
+                # sound
+                bite_tail.play()
                 # and diff_angle != 0):
                 return True
 
