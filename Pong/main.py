@@ -5,6 +5,9 @@ from scoreboard import Scoreboard
 import time
 
 screen = Screen()
+screen.title("Pong")
+screen.colormode(255)
+screen.bgcolor(33, 33, 33)
 screen.bgcolor("black")
 screen.setup(width=800, height=600)
 screen.title("Pong")
@@ -16,10 +19,10 @@ ball = Ball()
 scoreboard = Scoreboard()
 
 screen.listen()
-screen.onkey(r_paddle.go_up, "Up")
-screen.onkey(r_paddle.go_down, "Down")
-screen.onkey(l_paddle.go_up, "w")
-screen.onkey(l_paddle.go_down, "s")
+screen.onkey(r_paddle.go_up, "s")
+screen.onkey(r_paddle.go_down, "w")
+# screen.onkey(l_paddle.go_up, "w")
+# screen.onkey(l_paddle.go_down, "s")
 
 game_is_on = True
 while game_is_on:
