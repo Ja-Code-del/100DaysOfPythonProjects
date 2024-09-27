@@ -1,8 +1,8 @@
 from turtle import Turtle
-
+from food import Food
 ALIGNMENT = "center"
-FONT = ("monospace", 24, "normal")
-BIGFONT = ("courrier", 96, "normal")
+FONT = ("Verdana", 24, "normal")
+BIGFONT = ("Courier", 96, "bold")
 
 
 class ScoreBoard(Turtle):
@@ -23,7 +23,11 @@ class ScoreBoard(Turtle):
         self.goto(0, 0)
         self.write("GAME OVER", align=ALIGNMENT, font=BIGFONT)
 
-    def increase_score(self):
-        self.score += 1
-        self.clear()
+    def increase_score(self, food):
+        if food.food_len > 0.6:
+            self.score += 5
+            self.clear()
+        else:
+            self.score += 1
+            self.clear()
         self.display_score()

@@ -40,7 +40,7 @@ while session_one:
         if snake.collision_with(food):
             new_color = food.color()
             snake.get_longer(new_color[0])
-            scoreboard.increase_score()
+            scoreboard.increase_score(food)
             food.refresh()
 
         # Detect collision with the wall
