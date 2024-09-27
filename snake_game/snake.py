@@ -13,6 +13,7 @@ pygame.mixer.init()
 collision_with_food_sound = pygame.mixer.Sound("collisionFood.mp3")
 bite_tail = pygame.mixer.Sound("bite_tail.mp3")
 
+
 class Snake:
     def __init__(self):
         self.snake_size = 3
