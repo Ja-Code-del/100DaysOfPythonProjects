@@ -1,8 +1,13 @@
 from turtle import Turtle
 from food import Food
+import pygame
+
 ALIGNMENT = "center"
 FONT = ("Verdana", 24, "normal")
 BIGFONT = ("Courier", 96, "bold")
+
+pygame.mixer.init()
+game_over_sound = pygame.mixer.Sound("gameOver.mp3")
 
 
 class ScoreBoard(Turtle):
@@ -19,6 +24,7 @@ class ScoreBoard(Turtle):
         self.write(f"Score: {self.score}", align=ALIGNMENT, font=FONT)
 
     def game_over(self):
+        game_over_sound.play()
         self.color("red")
         self.goto(0, 0)
         self.write("GAME OVER", align=ALIGNMENT, font=BIGFONT)
@@ -27,7 +33,8 @@ class ScoreBoard(Turtle):
         if food.food_len > 0.6:
             self.score += 5
             self.clear()
+            self.display_score()
         else:
             self.score += 1
             self.clear()
-        self.display_score()
+            self.display_score()

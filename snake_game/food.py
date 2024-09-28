@@ -40,7 +40,7 @@ class Food(Turtle):
     def refresh(self):
         if self.times_at():
             self.display_big_food()
-            turtle.ontimer(self.hide_big_food, 2000)
+            turtle.ontimer(self.hide_big_food, 3000)
             self.x = r.randint(-280, 280)
             self.y = r.randint(-280, 280)
             self.goto(self.x, self.y)
