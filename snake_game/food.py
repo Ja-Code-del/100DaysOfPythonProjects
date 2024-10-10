@@ -73,3 +73,7 @@ class Food(Turtle):
             self.duration = r.randint(5000, 20000)
             return True
         return False
+
+    # : Create a rectangle to show the regression of big food life
+    # start with creating the rectangle where the big food will appear at the top of its head
+    # First get the coordinates of big food and then with "goto" draw the rect there with the method draw_life_time
