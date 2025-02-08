@@ -18,6 +18,7 @@ class CustomButton(QPushButton):
                 color: white;
                 border-radius: 5px;
                 padding: 5px 15px;
+                font-weight: bold;
             }
             QPushButton:hover {
                 background-color: #1565c0;
@@ -52,34 +53,30 @@ class FolderManagerUI(QWidget):
         self.init_ui()
 
     def init_ui(self):
-        # Configuration de la fenêtre principale
         self.setStyleSheet("""
             QWidget {
                 background-color: #f5f5f5;
             }
         """)
 
-        # Layout principal avec marges
         layout = QVBoxLayout()
         layout.setContentsMargins(20, 20, 20, 20)
         layout.setSpacing(15)
 
-        # Conteneur du haut
         top_container = QFrame()
         top_container.setStyleSheet("""
             QFrame {
                 background-color: white;
                 border-radius: 10px;
                 padding: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             }
         """)
         top_layout = QHBoxLayout(top_container)
 
-        # Barre de recherche améliorée
         self.search_bar = CustomSearchBar()
         self.search_bar.setPlaceholderText("🔍 Rechercher un dossier...")
 
-        # Horloge avec style
         self.clock_label = QLabel()
         self.clock_label.setFont(QFont('Arial', 12, QFont.Weight.Bold))
         self.clock_label.setStyleSheet("color: #2962ff;")
@@ -89,40 +86,37 @@ class FolderManagerUI(QWidget):
         top_layout.addWidget(self.clock_label, stretch=1, alignment=Qt.AlignmentFlag.AlignRight)
         layout.addWidget(top_container)
 
-        # Conteneur des boutons
         btn_container = QFrame()
         btn_container.setStyleSheet("""
             QFrame {
                 background-color: white;
                 border-radius: 10px;
                 padding: 15px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             }
         """)
         btn_layout = QHBoxLayout(btn_container)
         btn_layout.setSpacing(10)
 
-        # Création des boutons personnalisés
         self.new_btn = CustomButton("Nouveau dossier", "new")
         self.edit_btn = CustomButton("Modifier dossier", "edit")
         self.delete_btn = CustomButton("Supprimer dossier", "delete")
         self.settings_btn = CustomButton("Réglages", "settings")
 
-        # Ajout des boutons avec espacement égal
         for btn in [self.new_btn, self.edit_btn, self.delete_btn, self.settings_btn]:
             btn_layout.addWidget(btn)
+            btn.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
 
         layout.addWidget(btn_container)
 
-        # Timer pour l'horloge
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.update_time)
         self.timer.start(1000)
 
-        # Configuration finale de la fenêtre
         self.setLayout(layout)
         self.setWindowTitle("Gestionnaire de Dossiers")
-        self.setMinimumSize(600, 250)
-        self.resize(800, 300)
+        self.setMinimumSize(600, 300)
+        self.resize(800, 350)
 
     def update_time(self):
         current_time = QTime.currentTime().toString("HH:mm:ss")
@@ -131,12 +125,7 @@ class FolderManagerUI(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-
-    # Application du style global
     app.setStyle('Fusion')
-
-    # Création et affichage de la fenêtre
     window = FolderManagerUI()
     window.show()
-
     sys.exit(app.exec())
